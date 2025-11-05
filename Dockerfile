@@ -1,17 +1,12 @@
 FROM wordpress:php8.2-apache
 
-# Instala unzip e libpq-dev ANTES de qualquer coisa
+# Instala driver PostgreSQL
 RUN apt-get update && \
-    apt-get install -y unzip libpq-dev && \
+    apt-get install -y libpq-dev && \
     docker-php-ext-install pdo_pgsql pgsql && \
     rm -rf /var/lib/apt/lists/*
 
-# Baixa e extrai pg4wp
-RUN curl -O https://downloads.wordpress.org/plugin/pg4wp.zip && \
-    unzip pg4wp.zip -d /usr/src/wordpress/wp-content/plugins/ && \
-    rm pg4wp.zip
-
-# Copia wp-config
+# Copia wp-config personalizado
 COPY wp-config.php /var/www/html/wp-config.php
 
 # Permissões
