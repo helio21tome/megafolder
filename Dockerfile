@@ -1,8 +1,8 @@
 FROM wordpress:php8.2-apache
 
-# Instala PostgreSQL + unzip (SEM limpar cache antes!)
+# Instala unzip e libpq-dev ANTES de qualquer coisa
 RUN apt-get update && \
-    apt-get install -y libpq-dev unzip && \
+    apt-get install -y unzip libpq-dev && \
     docker-php-ext-install pdo_pgsql pgsql && \
     rm -rf /var/lib/apt/lists/*
 
