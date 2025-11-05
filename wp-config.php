@@ -1,4 +1,6 @@
 <?php
+
+define('WP_POSTGRESQL', true); // Ativa pg4wp
 // Configuração do PostgreSQL
 define('DB_NAME', getenv('WORDPRESS_DB_NAME') ?: 'wpdb_fh9e');
 define('DB_USER', getenv('WORDPRESS_DB_USER') ?: 'wpuser');
