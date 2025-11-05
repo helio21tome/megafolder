@@ -6,11 +6,11 @@ RUN apt-get update && \
     docker-php-ext-install pdo_pgsql pgsql && \
     rm -rf /var/lib/apt/lists/*
 
-# Baixa pg4wp de fork correto
-RUN curl -O https://github.com/kevinoid/postgresql-for-wordpress/archive/refs/heads/master.zip && \
-    unzip master.zip -d /tmp/ && \
-    cp -r /tmp/postgresql-for-wordpress-master/pg4wp /usr/src/wordpress/wp-content/plugins/ && \
-    rm -rf /tmp/master.zip /tmp/postgresql-for-wordpress-master && \
+# Baixa pg4wp de fork mantido (2025)
+RUN curl -O https://github.com/PostgreSQL-For-Wordpress/postgresql-for-wordpress/archive/refs/heads/main.zip && \
+    unzip main.zip -d /tmp/ && \
+    cp -r /tmp/postgresql-for-wordpress-main /usr/src/wordpress/wp-content/plugins/pg4wp && \
+    rm -rf /tmp/main.zip /tmp/postgresql-for-wordpress-main && \
     chmod -R 755 /usr/src/wordpress/wp-content/plugins/pg4wp
 
 # Copia wp-config
