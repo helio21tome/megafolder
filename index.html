@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telegram x1</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #ffffff;
+      color: #fff;
+      padding: 20px 0;
+      margin: 0;
+      width: 100%;
+      min-height: 100vh;
+    }
+    header {
+      background: #1F1F1F;
+      padding: 15px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 1px #fff;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .titulox h3 { color: red; font-weight: 600; font-size: 18px; margin-bottom: 2px; text-align: center; }
+    
+    .products-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 0 10px;
+      max-width: 100%;
+    }
+    
+    .product-card {
+      background: #2a2a2a;
+      border-radius: 10px;
+      padding: 16px;
+      width: 100%;
+      max-width: 500px;           /* largura máxima para não ficar muito largo em telas grandes */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+    .video-wrapper video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: contain;
+    }
+    .description {
+      font-size: 14px;
+      font-weight: bold;
+      color: #ccc;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .telegram-button {
+      background-color: #0088cc;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,136,204,0.5);
+      transition: all 0.3s;
+      text-align: center;
+      cursor: pointer;
+    }
+    .telegram-button:hover {
+      background-color: #007ab8;
+      transform: scale(1.04);
+    }
+    .purchase-button {
+      display: block;
+      margin: 20px auto 10px auto;
+      padding: 14px 24px;
+      font-size: 16px;
+      width: 80%;
+      max-width: 300px;
+      min-width: 220px;
+    }
+    .old-price {
+      font-size: 14px;
+      color: #d11414;
+      text-decoration: line-through;
+      margin-top: 6px;
+      text-align: center;
+    }
+    .toggle-menu {
+      background: #ff7b00;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .product-menu {
+      display: none;
+      background: #222;
+      padding: 15px;
+      margin: 0 10px 25px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .product-menu a {
+      display: block;
+      padding: 10px 0;
+      color: #ff9900;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .product-menu a:hover {
+      text-decoration: underline;
+      color: #ffb733;
+    }
+    .support-button {
+      padding: 18px 40px;
+      font-size: 20px;
+      margin: 40px auto;
+      max-width: 90%;
+      display: block;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .purchase-button { padding: 12px 20px; font-size: 15px; min-width: 180px; }
+      .product-card { padding: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <button class="toggle-menu" onclick="toggleMenu()">Click Here To See The List of Folders</button>
+  </header>
+
+  <div id="menu" class="product-menu">
+    <a href="#product1">😈AMELIA BONDLE GIRL🥵</a>
+    <a href="#product2">🔥LIZZY🥵😈</a>
+    <a href="#product3">🥵PREMIUM CP🥵</a>
+    <a href="#product4">🔥MON AND SON➡️</a>
+    <a href="#product5">😈NEW CP 02🔥</a>
+    <a href="#product6">🔥NEW CP 03🥵</a>
+    <a href="#product7">🔥REN BOYSv</a>
+    <a href="#product8">🔥English T33NS 😈</a>
+    <a href="#product9">🔥ANIMAL C#P FUCKING</a>
+    <a href="#product10">🔥T33ns L*aks➡️</a>
+    <a href="#product11">🔥IVANKAH✅</a>
+    <a href="#product12">😈DESIRE GRACIE✅</a>
+    <a href="#product13">🔥Black C#P</a>
+    <a href="#product14">✅WHITE TEENS🥵</a>
+    <a href="#product15">🔥High school thots🥵</a>
+    <a href="#product16">🥵PEDOMOM↕️</a>
+    <a href="#product17">🔥RAPE FOLDER✅🔥</a>
+    <a href="#product18">✅CP 5🔥</a>
+    <a href="#product19">🔥FOOT CP✅</a>
+    <a href="#product20">CP PARADISE✅</a>
+  </div>
+
+  <div class="products-container">
+
+    <!-- Produto 1 -->
+    <div id="product1" class="product-card" data-product="AMELIA BONDLE GIRL FOLDER" data-price="30">
+      <div class="titulox"><h3>😈AMELIA BONDLE GIRL🥵</h3></div>
+      <div class="description">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/pg8oni.mp4" type="video/mp4"></video></div>
+      <div class="description">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/060bcn.mp4" type="video/mp4"></video></div>
+      <div class="description">🥵Young Teen Solo Stuff🔥</div>
+      <div class="description">🔥1.34GB FOLDER on MEGA🔥 </div>
+      <div class="description">🥵🔥 + 6 FILES</div>
+      <div class="description">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $37.00</div>
+      <div class="description">Private and secure. Access granted after payment.</div>
+    </div>
+
+    <!-- Produto 2 -->
+    <div id="product2" class="product-card" data-product="LIZZY FOLDER" data-price="30">
+      <div class="titulox"><h3>🔥LIZZY🥵😈</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/gpqmzn.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/npoay/7.mp4" type="video/mp4"></video></div>
+      <div class="description">✅BLACKMAIL VIDEOS🥵</div>
+      <div class="description">✅TRAINING VIDEOS🔥</div>
+      <div class="description">🔥!NC3ST😈 </div>
+      <div class="description">🥵20.22GB Folder on MEGA</div>
+      <div class="description">🥵3486 FILES, 🥵9 SUBFOLDERS</div>
+      <div class="description" style="text-align: center;">↕️Premium content. Payment gives↕️</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $37.00</div>
+      <div class="description">Private and secure. Access granted after payment.</div>
+    </div>
+
+    <!-- Produto 3 -->
+    <div id="product3" class="product-card" data-product="PREMIUM CP FOLDER" data-price="45">
+      <div class="titulox"><h3>🔥🥵PREMIUM C#P🥵</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/wazvz" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/lbfrr" type="video/mp4"></video></div>
+      <div class="description">✅😈 64GB Folder on MEGA</div>
+      <div class="description">➡️COMPLETE FOLDER✅</div>
+      <div class="description" style="text-align: center;">➡️Premium content. Payment gives↕️</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $45</button>
+      <div class="old-price">Price $67.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 4 -->
+    <div id="product4" class="product-card" data-product="MON AND SON FOLDER" data-price="40">
+      <div class="titulox"><h3>🔥MON AND SON➡️</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/ovirp" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/ojiiy" type="video/mp4"></video></div>
+      <div class="description">R£AL !NC#-ST V!D£0S COLLECTION</div>
+      <div class="description">THIS FOLDER GOES CRAZY 😈💯</div>
+      <div class="description">🥵MOM - SON</div>
+      <div class="description">✅FATHER - DAUGHT3ER</div>
+      <div class="description">✅🥵2.94GB folder on MEGA 223 files</div>
+      <div class="description">✅MOM - DAUGTH3ER</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $40</button>
+      <div class="old-price">Price $57.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 5 -->
+    <div id="product5" class="product-card" data-product="NEW CP 02" data-price="30">
+      <div class="titulox"><h3>😈NEW CP 02🔥🥵</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/ebmjn/1.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/d2u3gj.mp4" type="video/mp4"></video></div>
+      <div class="description">✅🥵5GB folder on MEGA 60 files</div>
+      <div class="description">✅Complete Folder✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $57.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 6 -->
+    <div id="product6" class="product-card" data-product="NEW CP 03" data-price="30">
+      <div class="titulox"><h3>🔥😈NEW CP 03🔥🥵</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/03cooy.mp4" type="video/mp4"></video></div>
+      <div class="description">✅🥵10GB folder on MEGA 600 files</div>
+      <div class="description">✅Complete Folder✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $57.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 7 -->
+    <div id="product7" class="product-card" data-product="REN BOYS" data-price="30">
+      <div class="titulox"><h3>🔥REN BOYS</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/nzs932.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/nzs932.mp4" type="video/mp4"></video></div>
+      <div class="description">✅🥵11GB folder on MEGA 400 files</div>
+      <div class="description">✅Complete Folder✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $57.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 8 -->
+    <div id="product8" class="product-card" data-product="English T33NS FOLDER" data-price="30">
+      <div class="titulox"><h3>🔥English T33NS 😈</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/sqync" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/czhsj" type="video/mp4"></video></div>
+      <div class="description">✅↕️MORE THAN 200 BLACKMAIL VIDEOS</div>
+      <div class="description">↕️5.19GB IN TOTAL↕️</div>
+      <div class="description">↕️OVER 500 VIDEOS↕️</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $57.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 9 -->
+    <div id="product9" class="product-card" data-product="ANIMAL C#P FUCKING" data-price="50">
+      <div class="titulox"><h3>🔥🔥ANIMAL C#P FUCKING🔥</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/6y1h2a.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/smlsv0.mp4" type="video/mp4"></video></div>
+      <div class="description">✅↕️5GB folder on MEGA 150 files</div>
+      <div class="description">➡️ ONE OF THE BEST CP FOLDERS✅</div>
+      <div class="description">🥵MORE THAN 150 VIDEOS ✅</div>
+      <div class="description">➡️MY COMPLETE FOLDER✅</div>
+      <div class="description" style="text-align: center;">↕️Premium content. Payment gives↕️</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $50</button>
+      <div class="old-price">Price $65.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 10 -->
+    <div id="product10" class="product-card" data-product="T33ns L*aks FOLDER" data-price="35">
+      <div class="titulox"><h3>🔥T33ns L*aks➡️</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/dihki" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/lpalt" type="video/mp4"></video></div>
+      <div class="description">✅🔥1TB folder on MEGA 74099 files, 200 subfolders</div>
+      <div class="description">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $35</button>
+      <div class="old-price">Price $47.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 11 -->
+    <div id="product11" class="product-card" data-product="IVANKAH FOLDER" data-price="25">
+      <div class="titulox"><h3>🔥IVANKAH✅</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/daedk" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/yqonp" type="video/mp4"></video></div>
+      <div class="description">✅➡️10.22GB folder on MEGA 64 files</div>
+      <div class="description">✅14-YEAR-OLD GIRL ABUSING HER YOUNGER BROTHER</div>
+      <div class="description">✅YOUNG GIRL🥵</div>
+      <div class="description">✅🥵SOLO STUFF</div>
+      <div class="description">✅INCEST🥵</div>
+      <div class="description" style="text-align: center;">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $25</button>
+      <div class="old-price">Price $37.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 12 -->
+    <div id="product12" class="product-card" data-product="DESIRE GRACIE FOLDER" data-price="20">
+      <div class="titulox"><h3>🔥DESIRE GRACIE✅</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/cgpcdu.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/sapojl.mp4" type="video/mp4"></video></div>
+      <div class="description">➡️SOLO LEAK ✅</div>
+      <div class="description">➡️COMPLETE FOLDER✅</div>
+      <div class="description">✅🔥1.31GB FOLDER on MEGA 108 files, 3 subfolders</div>
+      <div class="description">✅🔥108 FILES</div>
+      <div class="description">✅🔥3 SUBFOLDERS</div>
+      <div class="description" style="text-align: center;">↕️Premium content. Payment gives↕️</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $20</button>
+      <div class="old-price">Price $37.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 13 -->
+    <div id="product13" class="product-card" data-product="Black C#P FOLDER" data-price="45">
+      <div class="titulox"><h3>🔥Black C#P</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/arusm" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/vjnwf" type="video/mp4"></video></div>
+      <div class="description">✅↕️1GB folder on MEGA 108 files</div>
+      <div class="description">↕️Premium content. Payment gives↕️</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $45</button>
+      <div class="old-price">Price $67.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 14 -->
+    <div id="product14" class="product-card" data-product="WHITE TEENS FOLDER" data-price="35">
+      <div class="titulox"><h3>✅WHITE TEENS🥵</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/0t4nuu.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/4fsr44.mp4" type="video/mp4"></video></div>
+      <div class="description">✅↕️5GB folder on MEGA 150 files</div>
+      <div class="description">↕️Premium content. Payment gives↕️</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $35</button>
+      <div class="old-price">Price $67.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 15 -->
+    <div id="product15" class="product-card" data-product="High school thots FOLDER" data-price="35">
+      <div class="titulox"><h3>🔥High school thots🥵</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/vtabh" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://leopard.hosting.pecon.us/dl/gworm" type="video/mp4"></video></div>
+      <div class="description">✅2.77 folder on MEGA 997 files. 1 more bonus link</div>
+      <div class="description">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $35</button>
+      <div class="old-price">Price $40.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 16 -->
+    <div id="product16" class="product-card" data-product="PEDOMOM FOLDER" data-price="30">
+      <div class="titulox"><h3>🥵PEDOMOM↕️</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/27cfgs.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/27cfgs.mp4" type="video/mp4"></video></div> <!-- duplicado, ajusta se tiver outro link -->
+      <div class="description">✅🔥3GB folder on MEGA 40 files </div>
+      <div class="description">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $67.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 17 -->
+    <div id="product17" class="product-card" data-product="RAPE FOLDER" data-price="30">
+      <div class="titulox"><h3>🔥RAPE FOLDER✅🔥</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/rizjqc.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/rizjqc.mp4" type="video/mp4"></video></div> <!-- duplicado, ajusta se necessário -->
+      <div class="description">✅🔥1.36 folder on MEGA 46 files and 474 subfolders </div>
+      <div class="description" style="text-align: center;">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $47.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 18 -->
+    <div id="product18" class="product-card" data-product="CP 5 FOLDER" data-price="35">
+      <div class="titulox"><h3>✅CP 5🔥</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/zxuwdz.mp4" type="video/mp4"></video></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/ltiug8.mp4" type="video/mp4"></video></div>
+      <div class="description">✅6.5GB IN TOTAL, MORE THAN 300 VIDEOS</div>
+      <div class="description" style="text-align: center;">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $35</button>
+      <div class="old-price">Price $47.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 19 -->
+    <div id="product19" class="product-card" data-product="FOOT CP FOLDER" data-price="30">
+      <div class="titulox"><h3>🔥FOOT CP✅</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/foot-cp-preview1.mp4" type="video/mp4"></video></div> <!-- substitui por link real se tiver -->
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/foot-cp-preview2.mp4" type="video/mp4"></video></div> <!-- substitui por link real -->
+      <div class="description">MORE THAN 100 VIDEOS,4.5GB IN TOTAL</div>
+      <div class="description" style="text-align: center;">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $47.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+    <!-- Produto 20 -->
+    <div id="product20" class="product-card" data-product="CP PARADISE FOLDER" data-price="30">
+      <div class="titulox"><h3>✅CP PARADISE🔥</h3></div>
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/paradise-preview1.mp4" type="video/mp4"></video></div> <!-- substitui por link real -->
+      <div class="description" style="text-align: center;">Preview↕️</div>
+      <div class="video-wrapper"><video controls><source src="https://files.catbox.moe/paradise-preview2.mp4" type="video/mp4"></video></div> <!-- substitui por link real -->
+      <div class="description">➡️MORE THAN 150 VIDEOS✅4GB IN TOTAL</div>
+      <div class="description" style="text-align: center;">✅Premium content. Payment gives✅</div>
+      <h3 style="text-align: center; margin: 20px 0 10px;">Purchase Options</h3>
+      <button class="telegram-button purchase-button buy-btn">🎧 Contact Seller $30</button>
+      <div class="old-price">Price $47.00</div>
+      <div class="description">Secure and instant delivery after verification.</div>
+    </div>
+
+  </div>
+
+  <a href="javascript:void(0)" onclick="window.open(getTelegramLink('MENU'), '_blank')" class="telegram-button support-button">
+    💬 Support-Telegram
+  </a>
+
+  <script>
+    const TELEGRAM_USER = "USD808";
+    const SELLER = "Big Lou";  // ← alterado para o nome que usavas antes (podes mudar)
+
+    function getTelegramLink(text = "") {
+      const encoded = encodeURIComponent(text);
+      return `https://t.me/${TELEGRAM_USER}${text ? "?text=" + encoded : ""}`;
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("#menu a").forEach(link => {
+        link.addEventListener("click", () => {
+          document.getElementById('menu').style.display = 'none';
+        });
+      });
+
+      document.querySelectorAll('.buy-btn').forEach(button => {
+        button.addEventListener('click', function() {
+          const card = this.closest('.product-card');
+          const productName = card.getAttribute('data-product');
+          const price = card.getAttribute('data-price');
+
+          const message = `Hi ${SELLER}\n\n` +
+                          `I am interested in purchasing this content:\n` +
+                          `"${productName}"\n\n` +
+                          `Price: $${price}\n\n` +
+                          `Can you confirm:\n` +
+                          `Payment Details\n\n` +
+                          `Thanks! 😊`;
+
+          window.open(getTelegramLink(message), '_blank');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
