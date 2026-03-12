@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Access – Get Access</title>
+  <title>Get Access</title>
   <style>
     :root {
-      --bg: #0a0a0a;
-      --text: #ff0044;
+      --bg: #ffffff;
+      --text:#ffcc00;
       --accent: #ff3366;
       --card-bg: #111;
       --border: #222;
-      --red-border: #ff0044;
+      --red-border: #ffcc00;
       --red-glow: rgba(255, 0, 68, 0.35);
     }
 
@@ -26,13 +26,13 @@
     header.banner {
       text-align:center;
       padding:40px 20px;
-      background:linear-gradient(to bottom, #1a0033, #000);
+      background:linear-gradient(to bottom, #ffffff, #ffffff);
     }
     header.banner h1 {
       font-size:2.3rem;
-      color:#ff3366;
+      color:#ad8b00;
       margin-bottom:12px;
-      text-shadow:0 0 10px rgba(255,51,102,0.6);
+      text-shadow:0 0 10px rgb(255, 238, 0);
     }
     .products-grid {
       display:grid;
@@ -52,7 +52,7 @@
     .product-card:hover {
       transform:translateY(-8px);
       box-shadow:0 16px 40px var(--red-glow);
-      border-color:#ff3366;
+      border-color:#ad8b00;
     }
     .product-header {
       background:#1a1a1a;
@@ -72,7 +72,8 @@
     }
     .video-container video {
       position:absolute;
-      border:2px solid var(--red-border);
+      border:4px solid var(--red-border);
+      border-radius: 16px;
       top: 0; bottom: 0;
       width:100%; height:95%;
       object-fit:cover;
@@ -83,7 +84,7 @@
       color:var(--text);
     }
     .product-content strong {
-      color:#ffdd57;
+      color:#ffcc00;
       font-size:1.1rem;
     }
     .features { margin:16px 0; font-size:1.05rem; }
@@ -91,7 +92,7 @@
     .features .emoji { font-size:1.3rem; margin-right:8px; }
     .buy-btn {
       display:inline-block;
-      background:linear-gradient(145deg, #ff3366, #cc0033);
+      background:linear-gradient(145deg, #ffe600, #cc0033);
       color:white;
       font-size:1.2rem;
       font-weight:bold;
@@ -115,7 +116,7 @@
       color:var(--text);
     }
     .promo-section h2 {
-      color:#cc99ff;
+      color:#8000ff;
       margin-bottom:20px;
       font-size:2.2rem;
     }
@@ -150,7 +151,7 @@
 <div class="container">
 
   <header class="banner">
-    <h2>⬇️ CP & TEENS FOLDERS AVAILABLE NOW! ⬇️</h2>
+    <h1>⬇️ CP & TEENS FOLDERS AVAILABLE NOW! ⬇️</h1>
   </header>
 
   <section class="products-grid">
@@ -662,10 +663,11 @@
   </section>
 
   <section class="contact-final">
-    <h2>For more content, contact support on Telegram to see the full menu.</h2>
-    <p style="margin:20px 0; font-size:1.4rem;">
+    <h2>FOR MORE CONTENT, CONTACT SUPPORT ON TELEGRAM TO SEE THE FULL MENU.</h2>
+
+    <p style="margin:20px 0; font-size:1.4rem;"><strong>
       Contact → <a href="#" onclick="this.href='https://t.me/'+TELEGRAM_USER+'?text=MENU'">USD808</a>
-    </p>
+    </strong></p>
   </section>
 
 </div>
